@@ -1,0 +1,32 @@
+.tab-menu__tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-menu__tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-menu__tab.active {
+  background: #3498db;
+  color: white;
+}
+
+.tab-menu__panel {
+  display: none;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.tab-menu__panel.active {
+  display: block;
+}
+
+img {
+  height: 300px;
+}

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+.burger-menu {
+  position: relative;
+}
+
+.burger-menu__list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.burger-menu__list.active {
+  display: block;
+}
+
+.burger-menu__submenu {
+  display: none;
+  padding-left: 20px;
+}
+
+.burger-menu__submenu.active {
+  display: block;
+}
+
+.burger-menu__toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
+
+.tab-menu__tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-menu__tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-menu__tab.active {
+  background: #3498db;
+  color: white;
+}
+
+.tab-menu__panel {
+  display: none;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.tab-menu__panel.active {
+  display: block;
+}
+
+img {
+  height: 300px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Цей стиль видаляємо */
+  /* display: none; */
+}
+
+.modal-overlay.hidden {
+  display: none; /* Ось тут все правильно */
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal__close {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Elements</title>
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+
+    <body>
+        <!-- Бургер-меню -->
+        <nav class="burger-menu">
+            <button class="burger-menu__toggle">☰</button>
+            <ul class="burger-menu__list">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul class="burger-menu__submenu">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li>
+                            <a href="#">Development</a>
+                            <ul class="burger-menu__submenu">
+                                <li><a href="#">Frontend</a></li>
+                                <li><a href="#">Backend</a></li>
+                                <li><a href="#">Full Stack</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                    <ul class="burger-menu__submenu">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Таб-меню -->
+        <div class="tab-menu">
+            <ul class="tab-menu__tabs">
+                <li class="tab-menu__tab active" data-tab="tab1">Tab 1</li>
+                <li class="tab-menu__tab" data-tab="tab2">Tab 2</li>
+                <li class="tab-menu__tab" data-tab="tab3">Tab 3</li>
+            </ul>
+            <div class="tab-menu__content">
+                <div class="tab-menu__panel active" id="tab1">
+                    <img src="./images/wallpaper.gif">
+                </div>
+                <div class="tab-menu__panel" id="tab2">
+                    <img src="./images/lili.jpg">
+                </div>
+                <div class="tab-menu__panel" id="tab3">
+                    <img src="./images/dendi.jpeg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальні вікна -->
+        <button class="modal-btn" data-modal="success">Open Success Modal</button>
+        <button class="modal-btn" data-modal="error">Open Error Modal</button>
+        <div class="modal-overlay hidden">
+            <div class="modal">
+                <p class="modal__content"></p>
+                <button class="modal__close">Close</button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

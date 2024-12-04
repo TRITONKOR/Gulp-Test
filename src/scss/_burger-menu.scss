@@ -1,0 +1,30 @@
+.burger-menu {
+  position: relative;
+}
+
+.burger-menu__list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.burger-menu__list.active {
+  display: block;
+}
+
+.burger-menu__submenu {
+  display: none;
+  padding-left: 20px;
+}
+
+.burger-menu__submenu.active {
+  display: block;
+}
+
+.burger-menu__toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
